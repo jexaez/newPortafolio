@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafólio Pessoal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="container_nav">
+        <nav class="container_nav_nav">  
+            <div>                       
+                <ul class="items_link_nav"> 
+                    <li class="link_nav_apresentacao"><a href="#mimpresentacao">Apresentação</a></li>                  
+                    <li class="link_nav_formacao" ><a href="#mimformacao">Formação</a></li>
+                    <li class="link_nav_experiencia" ><a href="#mimexperiencia">Experiência</a></li>
+                    <li class="link_nav_projeto" ><a href="#mimprojeto">Projeto</a></li>
+                    <li class="link_nav_contato"><a href="#mimcontato">Contato</a></li>              
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+  <div class="container">
+    <div class="profile box">
+      <img class="profile-pic" src="img/profile.jpeg" alt="Profile" />
+      <h1 class="title">Jani Exaez</h1>
+      <span>Manaus, Brazil</span>
+      <p>WEB DEVELOPER</p>
+      <ul class="redes-sociais">
+        <li>
+          <a href="https://www.facebook.com/Jexaez"><img src="img/facebook.svg" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jexaez/"><img src="img/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/whatsapp.svg" alt="WhatsApp" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jani-exaez-184519217/"><img src="img/linkedin.svg" alt="LinkedIn" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/jexaez"><img src="img/linkedin.svg" alt="LinkedIn" /></a> 
+        </li> 
+      </ul>
+    </div>
+    <div class="portfolio box">
+      <h1 class="title">Portfólio</h1>
+      
+      <div class="container_conteudo" id="mimpresentacao">
+        <h3 class="mim_saludo">Olá</h3>
+        <p class="mim_paragrafo">
+        Me considero uma pessoa muito esforzada, gosto de aprender novos conhecimentos na área de tecnologia, gosto de programar e de tudo que posso criar com ela, acredito que inovar e encontrar soluções para diferentes problemas pode ajudar uma pessoa, um país, uma nação.</p>
+      </div> 
+
+      <div class="formacao">
+        <h2 id="mimformacao">Formação</h2>
+        <p class="mim_paragrafo">
+            Atualmente estudante do Programa de Carreira FRONT END -TOTI Diversidade Brasil
+        </p>
+      </div>
+
+      <div class="experiencia">
+        <h2 id="mimexperiencia">Experiência</h2>
+        <p class="mim_paragrafo">Manaus Visão Hack 2021 (Hackathon): 48 horas continuas/Casarão da Inovação Cassina</p>
+      </div>
+
+      <div class="projeto">
+        <h2 id="mimprojeto">Projeto</h2>
+        <p class="mim_paragrafo">Em busca de novas oportunidades para desenvolver e melhoar meus conhecimentos e fazer um trabalho com excelência.</p>
+        <div class="mostra_projetos">
+            <article class="card mb-2 mx-2" style="width: 18rem;">
+                <img class="card-img-top" 
+                src="img/Sistema_BD.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Sistema de Base Dados</h3>
+                    <p class="card-texto">Sistema de base de dados que pesquisa por categoria dentro de un banco de dados</p>
+                </div>
+            </article>
+            <article class="card mb-2 mx-2" style="width: 18rem;">
+                <img class="card-img-top" 
+                src="img/Cadastro.png" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Pagina de Registro</h3>
+                    <p class="card-texto">Pagina de registro</p>
+                </div>
+            </article>
+        </div>
+    </div> 
+
+    <div>
+      <div class="contacto">
+        <div class="informacao">
+            <h2 id="mimcontato">contato</h2>
+            <p class="paragrafo_contato">Comunicar por estes meios, meus contatos e minhas redes sociais.</p>           
+        </div>
+
+        <div class="cadastro">
+            <form id="for-contato" method="POST">
+                <div class="container">
+                    <div>
+                      <div class="form-group col-md-6 ">
+                        <label for="nome">NOME COMPLETO</label>
+                        <input
+                          placeholder="Joao Lucas"
+                          type="text"
+                          class="form-control"
+                          id="nome"
+                          name="nome"
+                        />
+                      </div>
+  
+                      <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="email">EMAIL</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="email"
+                              name="email"
+                            />
+                          </div>
+                          
+                        </div>
+          
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputAssunto">ASSUNTO</label>
+                          <input
+                            placeholder="Titulo de assunto"
+                            type="text"
+                            class="form-control"
+                            id="inputAssunto"
+                            nome="inputAssunto"
+                          />
+                        </div>
+          
+                        <div class="form-group col-md-6">
+                          <label for="inputMensagem">MENSAGEM</label>
+                          <textarea
+                              type="text" 
+                              class="form-control" 
+                              id="inputMensagem" 
+                              name="inputMensagem"
+                              cols="30" 
+                              rows="10">
+                          </textarea>
+                        </div>  
+                      </div>
+          
+                          <button type="submit" id="buton1" class="btn btn-primary espaco">Aceptar</button>        
+                    </div>
+                  </div>       
+            </form>        
+        </div>   
+     
+  </div>
+  <p class="copyright">© 2021 jexaez</p> 
+  <script src="script.js"></script> 
+</body>
+</html>
