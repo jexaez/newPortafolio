@@ -168,8 +168,7 @@ body {
 }
 
 .mostra_projetos{
-  display:block;
-  top: 0px;
+  display:flow-root; 
 }
 .contacto{
   display: block;

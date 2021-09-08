@@ -1,7 +1,7 @@
 let form = document.getElementById("form-contato");
 let boton1=document.querySelector('#buton1');
 let registros=[];
-
+let erros = [];
 
 
 form.addEventListener("submit", function (e) {
@@ -12,7 +12,8 @@ form.addEventListener("submit", function (e) {
   let dados = {
     nome: formData.get("nome").trim(),
     email: formData.get("email").trim(),
-    
+    assunto: formData.get("assunto"),
+    mensagem: formData.get("mensagem")  
   };
 
   registros.push(dados);
@@ -21,29 +22,30 @@ form.addEventListener("submit", function (e) {
      email.value='';
      assunto.value='';
      mensagem.value='';
-      
-    for(let dados of registros){
-    console.log('Nome: '+dados.nome+ ' Assunto: '+dados.assunto);
-    }    
 
-  let erros = [];
+  for(let dados of registros){
+  console.log('Nome: '+dados.nome+ ' Email: '+dados.email+ ' Titulo: ' +dados.assunto+' Mensagem: ' +dados.mensagem);
+  }    
+
+  
 
   if (!validaObrigatorio(dados.nome)) {
     erros.push("O nome é obrigatório");
   } else if (!validaPeloMenos2Caracteres(dados.nome)) {
     erros.push("O nome precisa ter pelo menos dois caracteres");
   } 
+
   if (!validaFormatoEmail(dados.email)) {
     erros.push("O email precisa ter um formato válido");
   }
-  
+   
   exibirErrosForm(erros)
   if (!erros.length) {
       setTimeout(() => alert('Dados enviados com sucesso!'), 0)
   }
 
-  console.log(dados);
-  console.log(erros)
+  //console.log(dados);
+  //console.log(erros)
 });
 
 function validaObrigatorio(valor) {

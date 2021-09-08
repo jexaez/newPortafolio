@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portafólio Pessoal</title>
+ 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- CSS only -->
@@ -78,8 +80,11 @@
       </div>
 
       <div class="projeto">
-        <h2 id="mimprojeto">Projeto</h2>
-        <p class="mim_paragrafo">Em busca de novas oportunidades para desenvolver e melhoar meus conhecimentos e fazer um trabalho com excelência.</p>
+        <div>
+          <h2 id="mimprojeto">Projeto</h2>
+          <p class="mim_paragrafo">Em busca de novas oportunidades para desenvolver e melhoar meus conhecimentos e fazer um trabalho com excelência.</p>
+        </div>
+
         <div class="mostra_projetos">
             <article class="card mb-2 mx-2" style="width: 18rem;">
                 <img class="card-img-top" 
@@ -98,76 +103,78 @@
                 </div>
             </article>
         </div>
-    </div> 
+      </div>
 
-    <div>
-      <div class="contacto">
-        <div class="informacao">
-            <h2 id="mimcontato">contato</h2>
-            <p class="paragrafo_contato">Comunicar por estes meios, meus contatos e minhas redes sociais.</p>           
-        </div>
-
-        <div class="cadastro">
-            <form id="for-contato" method="POST">
-                <div class="container">
-                    <div>
-                      <div class="form-group col-md-6 ">
-                        <label for="nome">NOME COMPLETO</label>
-                        <input
-                          placeholder="Joao Lucas"
-                          type="text"
-                          class="form-control"
-                          id="nome"
-                          name="nome"
-                        />
-                      </div>
-  
-                      <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="email">EMAIL</label>
+      <div class="container">  
+        <div class="contacto">
+            <div class="informacao">
+                <h2 id="mimcontato">contato</h2>
+                <p class="paragrafo_contato">Comunicar por estes meios, meus contatos e minhas redes sociais.</p>           
+            </div>
+    
+            <div class="cadastro">
+                <form id="form-contato" method="POST">
+                    <div class="container">
+                        <div>
+                          <div class="form-group col-md-6 ">
+                            <label for="nome">NOME COMPLETO</label>
                             <input
+                              placeholder="Joao Lucas"
                               type="text"
                               class="form-control"
-                              id="email"
-                              name="email"
+                              id="nome"
+                              name="nome"
                             />
                           </div>
-                          
+      
+                          <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="email">EMAIL</label>
+                                <input
+                                  placeholder="email@exemplo.com"
+                                  type="text"
+                                  class="form-control"
+                                  id="email"
+                                  name="email"
+                                />
+                             </div>
+                              
+                          </div>
+              
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="assunto">ASSUNTO</label>
+                              <input
+                                placeholder="Titulo de assunto"
+                                type="text"
+                                class="form-control"
+                                id="assunto"
+                                nome="assunto"
+                              />
+                            </div>
+              
+                            <div class="form-group col-md-6">
+                              <label for="mensagem">MENSAGEM</label>
+                              <textarea
+                                  type="text" 
+                                  class="form-control" 
+                                  id="mensagem" 
+                                  name="mensagem"
+                                  cols="30" 
+                                  rows="10">
+                              </textarea>
+                            </div>  
+                          </div>                                  
                         </div>
-          
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputAssunto">ASSUNTO</label>
-                          <input
-                            placeholder="Titulo de assunto"
-                            type="text"
-                            class="form-control"
-                            id="inputAssunto"
-                            nome="inputAssunto"
-                          />
+                        <div id="erros-form"></div>
+                        <div>
+                          <button type="submit" id="buton1" class="btn btn-primary espaco">Aceptar</button>
                         </div>
-          
-                        <div class="form-group col-md-6">
-                          <label for="inputMensagem">MENSAGEM</label>
-                          <textarea
-                              type="text" 
-                              class="form-control" 
-                              id="inputMensagem" 
-                              name="inputMensagem"
-                              cols="30" 
-                              rows="10">
-                          </textarea>
-                        </div>  
-                      </div>
-          
-                          <button type="submit" id="buton1" class="btn btn-primary espaco">Aceptar</button>        
-                    </div>
-                  </div>       
-            </form>        
-        </div>   
-     
-  </div>
-  <p class="copyright">© 2021 jexaez</p> 
-  <script src="script.js"></script> 
+                      </div>       
+                </form>        
+          </div>       
+        <p class="copyright">© 2021 jexaez</p> 
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>
